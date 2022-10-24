@@ -54,8 +54,8 @@ public class DataService {
             list.add(array.getJSONObject(i).getString("state_name"));
         }
 
-        System.out.println(Arrays.toString(list.toArray()));
-        list.forEach(System.out::println);
+//        System.out.println(Arrays.toString(list.toArray()));
+//        list.forEach(System.out::println);
 
     }
 }
