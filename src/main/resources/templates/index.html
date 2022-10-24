@@ -45,34 +45,31 @@
 							    	
 							    	>
 							 </div> -->
+
+
 							 <div class="container mt-4">
+								 <!-- state option -->
 							 	<div class="form-group">
-							 	<select class="custom-select custom-select-lg mb-3">
-							 	
-								  <option selected>Select The State</option>
-								  <option value="1">One</option>
-								  <option value="2">Two</option>
-								  <option value="3">Three</option>
-								</select>
+									<select class="custom-select custom-select-lg mb-3">
+
+									  <option selected >Select The State</option>
+									  <option th:each="States : ${allStates}" th:text="${States.name}" th:value="${States.id}"></option>
+
+									</select>
+								</div>
+
+								<!--District option-->
+
+								 <div class="form-group">
+									<select class="custom-select custom-select-lg mb-3">
+									  <option selected>Select The District</option>
+									  <option th:each="Districts : ${allDistricts}" th:text="${Districts.name}" th:value="${Districts.id}"></option>
+
+									</select>
+								 </div>
 							 </div>
-							 <div class="form-group">
-							 	<select class="custom-select custom-select-lg mb-3">
-								  <option selected>Select The District</option>
-								  <option value="1">One</option>
-								  <option value="2">Two</option>
-								  <option value="3">Three</option>
-								</select>
-							 </div>
-							 </div>
-							 
-							 
-						
-						
-							 
-							 
-							 
+
 							 <div class="container text-center">
-							 
 							 	<button type="submit" class="btn bg-primary text-white">Search</button>
 							 </div>						
 							 
